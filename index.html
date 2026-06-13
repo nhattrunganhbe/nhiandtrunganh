@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kỷ niệm của tụi mình 💕</title>
+
+  <!-- Font: Playfair Display (tiêu đề) + Nunito (thân) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet" />
+
+  <!-- Leaflet (bản đồ miễn phí, không cần API key) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Nền tim/cánh hoa rơi -->
+  <div id="falling" class="falling" aria-hidden="true"></div>
+
+  <!-- ============ MÀN HÌNH TEASER MỞ ĐẦU ============ -->
+  <section id="teaser" class="teaser">
+    <div class="teaser-card">
+      <p id="teaser-text" class="teaser-text"></p>
+      <button id="teaser-btn" class="btn-cute" type="button"></button>
+    </div>
+  </section>
+
+  <!-- ============ NỘI DUNG CHÍNH ============ -->
+  <main id="content" class="content hidden">
+
+    <!-- Hero -->
+    <header class="hero">
+      <img id="hero-img" class="hero-img" alt="Ảnh của hai đứa" />
+      <div class="hero-overlay">
+        <h1 id="hero-title" class="hero-title"></h1>
+        <p id="hero-subtitle" class="hero-subtitle"></p>
+      </div>
+      <div class="scroll-hint">⌄</div>
+    </header>
+
+    <!-- Những nơi ta đã đi qua (slideshow bấm-để-chuyển) -->
+    <section class="places">
+      <h2 id="title-places" class="section-title reveal">Những nơi ta đã đi qua</h2>
+      <div id="places-list"></div>
+    </section>
+
+    <!-- Địa điểm ẩn giấu -->
+    <section class="section secret-section">
+      <div id="secret-card" class="secret-card reveal">
+        <div class="secret-locked">
+          <div class="lock-icon">🔒</div>
+          <p id="secret-lock-text" class="secret-lock-text"></p>
+          <button id="secret-btn" class="btn-cute" type="button">Mở ra 💌</button>
+        </div>
+        <div class="secret-open hidden">
+          <h3 id="secret-title" class="secret-title"></h3>
+          <img id="secret-img" class="secret-img hidden" alt="" />
+          <p id="secret-message" class="secret-message"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ảnh đẹp + lời nhắn -->
+    <section class="section gallery-section">
+      <h2 id="title-gallery" class="section-title reveal">Ảnh đẹp &amp; lời nhắn 💌</h2>
+      <div id="gallery" class="gallery"></div>
+    </section>
+
+    <!-- Bản đồ -->
+    <section class="section map-section">
+      <h2 id="title-map" class="section-title reveal">Hành trình của tụi mình 📍</h2>
+      <div id="map" class="map reveal"></div>
+    </section>
+
+    <footer id="footer-text" class="footer">Made with 💕</footer>
+  </main>
+
+  <!-- Lightbox phóng to ảnh -->
+  <div id="lightbox" class="lightbox hidden" role="dialog" aria-modal="true">
+    <button id="lightbox-close" class="lightbox-close" type="button" aria-label="Đóng">&times;</button>
+    <img id="lightbox-img" class="lightbox-img" alt="" />
+    <p id="lightbox-caption" class="lightbox-caption"></p>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
