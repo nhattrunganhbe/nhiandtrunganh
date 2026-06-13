@@ -137,5 +137,5 @@ const ANH_DEP = [
    ------------------------------------------------------------------------- */
 const LOI_NHAN = [
   "anh biết nhiều lần a vô tâm khiến e buồn, tính a hay kiểu lúc có thì luôn mặc định là có mà không biết giữ gìn",
-   "nhưng mà anh cũng rất biết ơn vì cuộc đời đã cho a gặp e, người luôn quan tâm lo lắng cho anh, yêu anh. "
+  "nhưng mà anh cũng rất biết ơn vì cuộc đời đã cho a gặp e, người luôn quan tâm lo lắng cho anh, yêu anh. ",
 ];

@@ -177,7 +177,9 @@ body {
 .gallery-item img:hover { transform: scale(1.02); }
 .gallery-item video { cursor: default; background: #000; }
 .gallery-message {
-  break-inside: avoid; margin-bottom: 14px;
+  column-span: all;            /* trải ngang hết khung -> thứ tự đúng theo data.js */
+  break-inside: avoid;
+  max-width: 680px; margin: 10px auto 24px;
   background: var(--white); border-radius: 16px; padding: 26px 24px;
   box-shadow: var(--shadow); text-align: center;
   font-family: "Playfair Display", serif; font-style: italic;
