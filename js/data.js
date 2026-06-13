@@ -136,6 +136,6 @@ const ANH_DEP = [
    7) LỜI NHẮN (xen giữa phần ảnh đẹp)
    ------------------------------------------------------------------------- */
 const LOI_NHAN = [
-  "nhưng mà anh cũng rất biết ơn vì cuộc đời đã cho a gặp e, người luôn quan tâm lo lắng cho anh, yêu anh. ",
   "anh biết nhiều lần a vô tâm khiến e buồn, tính a hay kiểu lúc có thì luôn mặc định là có mà không biết giữ gìn",
+   "nhưng mà anh cũng rất biết ơn vì cuộc đời đã cho a gặp e, người luôn quan tâm lo lắng cho anh, yêu anh. "
 ];
